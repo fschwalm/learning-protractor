@@ -1,7 +1,9 @@
 exports.config = {
-    capabilities: {
+    multiCapabilities: [{
         'browserName': 'firefox'
-    },
+    }, {
+        'browserName': 'chrome'
+    }],
     directConnect: true,
     specs: ['super-calculator/*.js']
 };
